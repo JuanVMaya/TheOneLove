@@ -56,7 +56,7 @@ function createLetterSoup(words, gridSize) {
   });
 
   fillEmptySpaces();
-  console.log("Grid:", grid);
+
   return grid;
 }
 

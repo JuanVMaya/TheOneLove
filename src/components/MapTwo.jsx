@@ -12,7 +12,7 @@ const MapTwo = () => {
   const isWon = useLetterSoupStore((state) => state.isWon);
   useEffect(() => {
     setProgressTo(30);
-    setSoup(createLetterSoup(["oscar", "mila", "ottawa"], 8));
+    setSoup(createLetterSoup(["OSCAR", "MILA", "OTTAWA"], 8));
   }, []);
 
   return (
@@ -36,7 +36,7 @@ const MapTwo = () => {
       </div>
       <div className="block">
         <h2 className="font-xl font-medium">Instructions:</h2>
-        <p>There are three words that need to be found</p>
+        <p>Find three words that represent something important in our lives</p>
       </div>
       {isWon && (
         <div role="alert" className="alert alert-success">

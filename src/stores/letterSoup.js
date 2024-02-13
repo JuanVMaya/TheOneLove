@@ -1,8 +1,8 @@
 import { create } from "zustand";
 
 const useLetterSoupStore = create((set) => ({
-  //   result: "AAAACILMOORSTTW",
-  result: "aaaacilmoorsttw",
+  result: "AAAACILMOORSTTW",
+  //   result: "aaaacilmoorsttw",
   isWon: false,
   progressString: "",
   win: () => set(() => ({ isWon: true })),
