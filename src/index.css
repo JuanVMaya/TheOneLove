@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.heart-shape {
+  clip-path: polygon(
+    50% 20%,
+    61% 12%,
+    75% 20%,
+    85% 35%,
+    90% 52%,
+    85% 70%,
+    75% 80%,
+    50% 100%,
+    25% 80%,
+    15% 70%,
+    10% 52%,
+    15% 35%,
+    25% 20%,
+    39% 12%
+  );
+}

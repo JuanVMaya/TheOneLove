@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import useAuthStore from "../stores/auth";
 import useProgressStore from "../stores/progress";
+import { useNavigate } from "react-router-dom";
 
 const SignInForm = () => {
   const [passcode, setPasscode] = useState("");
   const signIn = useAuthStore((state) => state.signIn);
   const [error, setError] = useState(false);
   const setProgressTo = useProgressStore((state) => state.setProgressTo);
+  const navigate = useNavigate();
 
   const handlePasscodeSubmit = (event) => {
     event.preventDefault();
@@ -17,6 +19,7 @@ const SignInForm = () => {
     signIn();
     setPasscode("");
     setProgressTo(10);
+    navigate("/map1");
   };
   const handlePasscodeInput = (event) => {
     setPasscode(event.target.value);
@@ -28,7 +31,7 @@ const SignInForm = () => {
   return (
     <form
       onSubmit={handlePasscodeSubmit}
-      className="h-96 flex flex-col justify-center align-middle w-full gap-4"
+      className="h-96 flex flex-col justify-center align-middle w-full gap-4 p-4"
     >
       <h1 className="text-3xl font-bold">Hi beb!</h1>
       {error && (

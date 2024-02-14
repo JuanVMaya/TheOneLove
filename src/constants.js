@@ -16,5 +16,45 @@ const ANSWERS = [
     correctFlag: false,
   },
 ];
+const ANSWERS_TWO = [
+  {
+    text: "December 27th, 2023",
+    correctFlag: false,
+  },
+  {
+    text: "December 28th, 2023",
+    correctFlag: false,
+  },
+  {
+    text: "December 29th, 2023",
+    correctFlag: true,
+  },
+  {
+    text: "December 30st, 2023",
+    correctFlag: false,
+  },
+  {
+    text: "December 31st, 2023",
+    correctFlag: false,
+  },
+];
+const ANSWERS_THREE = [
+  {
+    text: "Mila",
+    correctFlag: false,
+  },
+  {
+    text: "Oscar",
+    correctFlag: false,
+  },
+  {
+    text: "Juan",
+    correctFlag: false,
+  },
+  {
+    text: "All of the above",
+    correctFlag: true,
+  },
+];
 
-export { ANSWERS };
+export { ANSWERS, ANSWERS_TWO, ANSWERS_THREE };

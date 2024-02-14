@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 
-const AnswerButton = ({ answer, setPrank, correct, setCorrect }) => {
+const AnswerButton = ({
+  answer,
+  setCorrectFeedback,
+  correct,
+  setCorrect,
+  prankActive,
+}) => {
   const [error, setError] = useState(false);
 
   const handleCheckResponse = (attempt) => {
@@ -13,12 +19,20 @@ const AnswerButton = ({ answer, setPrank, correct, setCorrect }) => {
       }, 1000);
       return;
     }
-    setPrank("Active");
-    setError(true);
+    if (prankActive) {
+      setCorrectFeedback("Active");
+      setError(true);
+      setTimeout(() => {
+        setError(false);
+        setCorrect(true);
+        setCorrectFeedback("Shown");
+      }, 3000);
+      return;
+    }
+    setCorrectFeedback("Active");
+    setCorrect(true);
     setTimeout(() => {
-      setError(false);
-      setCorrect(true);
-      setPrank("Shown");
+      setCorrectFeedback("Shown");
     }, 3000);
   };
 

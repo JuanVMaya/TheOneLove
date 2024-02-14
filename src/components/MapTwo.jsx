@@ -10,8 +10,9 @@ const MapTwo = () => {
   const [soup, setSoup] = useState([]);
   const setProgressTo = useProgressStore((state) => state.setProgressTo);
   const isWon = useLetterSoupStore((state) => state.isWon);
+
   useEffect(() => {
-    setProgressTo(30);
+    setProgressTo(40);
     setSoup(createLetterSoup(["OSCAR", "MILA", "OTTAWA"], 8));
   }, []);
 
@@ -56,7 +57,7 @@ const MapTwo = () => {
           <span>Well done! 😉</span>
         </div>
       )}
-      <Link className="btn" disabled={!isWon}>
+      <Link className="btn" disabled={!isWon} to="/map3">
         Continue
       </Link>
     </div>
