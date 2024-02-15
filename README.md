@@ -1,4 +1,4 @@
-# TheOneLove
+# TheOneLove 💗
 
 This is a simple app made in React with Javascript. This was made specifically for my fiance for 2024 valentine's day.
 
