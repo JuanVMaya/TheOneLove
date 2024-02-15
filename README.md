@@ -1,8 +1,7 @@
-# React + Vite
+# TheOneLove
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple app made in React with Javascript. This was made specifically for my fiance for 2024 valentine's day.
 
-Currently, two official plugins are available:
+The app is very simple, it has a fun algorithm to make a working letter soup (or at least that is what I call it in Spanish lol).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+It is important to mention that this app is optimized for an Iphone 13 Pro phone. It is not supposed to be navigated on a desktop or any other device really.
